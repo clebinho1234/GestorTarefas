@@ -53,6 +53,11 @@ class Database:
 
         cursor.execute(query, valores)
         return cursor.fetchall()
+    
+    def obter_tarefa(self, id):
+        cursor = self.conn.cursor()
+        cursor.execute("SELECT * FROM tarefas WHERE id = ?", (id,))
+        return cursor.fetchone()
 
     def inserir_tarefa(self, titulo, prioridade, data_criacao, estado):
         query = """

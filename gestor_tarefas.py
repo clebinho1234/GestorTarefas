@@ -30,6 +30,12 @@ class GestorTarefas:
 
         return tarefas
     
+    def obter_tarefa(self, id):
+        resultado_db = self.db.obter_tarefa(id)
+        if resultado_db is None:
+            return None
+        return Tarefa.from_dict(resultado_db)
+    
     def adicionar_tarefa(self, titulo, prioridade):
         if prioridade not in ["Alta", "Média", "Baixa"]:
             raise ValueError("Prioridade inválida")

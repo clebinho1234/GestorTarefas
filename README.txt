@@ -1,15 +1,15 @@
 To use the project execute these lines:
 
-uvicorn main:app --reload - to execute API main.py
-
 .venv\Scripts\activate
 python.exe -m pip install --upgrade pip
 pip install fastapi uvicorn
 
+uvicorn main:app --reload - to execute API main.py
+
 
 For tests:
 pip install pytest
-pytest ou python -m pytest - for use tests in test_gestor_tarefas.py
+pytest - for use tests in test_gestor_tarefas.py
 
 pip install httpx - for API tests
 

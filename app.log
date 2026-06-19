@@ -29,3 +29,121 @@
 2026-06-11 11:10:05,257 - INFO - logger_config - GET / Status: 200 Tempo: 0.0020s
 2026-06-11 11:13:36,008 - ERROR - logger_config - Erro inesperado: unhashable type: 'dict' em GET /
 2026-06-15 11:35:28,354 - ERROR - logger_config - Erro inesperado: unhashable type: 'dict' em GET /
+2026-06-15 12:09:26,143 - ERROR - logger_config - Erro inesperado: unhashable type: 'dict' em GET /
+2026-06-15 12:09:26,506 - ERROR - logger_config - Erro inesperado: unhashable type: 'dict' em GET /
+2026-06-15 12:19:11,902 - INFO - logger_config - GET /docs Status: 200 Tempo: 0.0010s
+2026-06-15 12:19:12,288 - INFO - logger_config - GET /openapi.json Status: 200 Tempo: 0.0186s
+2026-06-15 12:33:48,733 - INFO - logger_config - GET / Status: 200 Tempo: 0.0050s
+2026-06-15 12:33:48,817 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0130s
+2026-06-15 12:34:07,293 - INFO - logger_config - A adicionar tarefa:  (PrioridadeEnum.alta)
+2026-06-15 12:34:07,294 - WARNING - logger_config - Tentativa de criar tarefa duplicada: 
+2026-06-15 12:34:07,294 - WARNING - logger_config - HTTPException 409 em POST /tarefas
+2026-06-15 12:34:07,298 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0020s
+2026-06-15 12:34:17,179 - INFO - logger_config - GET / Status: 200 Tempo: 0.0000s
+2026-06-15 12:34:17,201 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0020s
+2026-06-15 12:42:44,800 - INFO - logger_config - GET / Status: 200 Tempo: 0.0460s
+2026-06-15 12:42:44,841 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0027s
+2026-06-15 12:43:07,753 - INFO - logger_config - GET / Status: 200 Tempo: 0.0210s
+2026-06-15 12:43:07,781 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0030s
+2026-06-15 12:43:19,797 - INFO - logger_config - GET / Status: 200 Tempo: 0.0220s
+2026-06-15 12:43:19,822 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0020s
+2026-06-15 12:44:52,308 - INFO - logger_config - A adicionar tarefa: pular (PrioridadeEnum.alta)
+2026-06-15 12:44:52,317 - INFO - logger_config - Tarefa criada com sucesso
+2026-06-15 12:44:52,318 - INFO - logger_config - POST /tarefas Status: 201 Tempo: 0.0120s
+2026-06-15 12:44:52,323 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0030s
+2026-06-15 12:44:59,242 - INFO - logger_config - A remover tarefa 8
+2026-06-15 12:44:59,248 - INFO - logger_config - Tarefa 8 removida com sucesso
+2026-06-15 12:44:59,248 - INFO - logger_config - DELETE /tarefas/8 Status: 204 Tempo: 0.0110s
+2026-06-15 12:44:59,253 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0030s
+2026-06-15 12:45:02,305 - INFO - logger_config - GET / Status: 200 Tempo: 0.0233s
+2026-06-15 12:45:02,326 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0020s
+2026-06-15 12:47:57,605 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0020s
+2026-06-15 12:53:01,454 - INFO - logger_config - GET / Status: 200 Tempo: 0.0240s
+2026-06-15 12:53:01,521 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0030s
+2026-06-15 12:53:27,538 - INFO - logger_config - GET / Status: 200 Tempo: 0.0250s
+2026-06-15 12:53:27,566 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0020s
+2026-06-15 12:55:13,145 - INFO - logger_config - GET / Status: 200 Tempo: 0.0030s
+2026-06-15 12:55:13,169 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0030s
+2026-06-18 11:47:03,635 - INFO - logger_config - GET / Status: 200 Tempo: 0.0050s
+2026-06-18 11:47:03,711 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0085s
+2026-06-18 11:48:14,294 - INFO - logger_config - GET / Status: 200 Tempo: 0.0320s
+2026-06-18 11:48:14,320 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0020s
+2026-06-18 11:49:28,505 - ERROR - logger_config - Erro inesperado: 'index.html' not found in search path: 'templates' em GET /
+2026-06-18 11:49:56,208 - ERROR - logger_config - Erro inesperado: 'css/templates/index.html' not found in search path: 'templates' em GET /
+2026-06-18 11:50:39,267 - ERROR - logger_config - Erro inesperado: 'index.html' not found in search path: 'css/templates' em GET /
+2026-06-18 11:51:07,710 - INFO - logger_config - GET / Status: 200 Tempo: 0.0030s
+2026-06-18 11:51:07,732 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0040s
+2026-06-18 11:53:13,048 - INFO - logger_config - GET / Status: 200 Tempo: 0.0251s
+2026-06-18 11:53:13,069 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0020s
+2026-06-18 11:55:29,282 - INFO - logger_config - GET / Status: 200 Tempo: 0.0249s
+2026-06-18 11:55:29,301 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0020s
+2026-06-18 11:55:30,142 - ERROR - logger_config - Erro inesperado: 'Database' object has no attribute 'obter_tarefa' em GET /edit/6
+2026-06-18 12:01:32,943 - ERROR - logger_config - Erro inesperado: 'Database' object has no attribute 'obter_tarefa' em GET /edit/6
+2026-06-18 12:03:25,073 - ERROR - logger_config - Erro inesperado: Jinja2Templates.TemplateResponse() missing 1 required positional argument: 'request' em GET /edit/6
+2026-06-18 12:03:57,278 - INFO - logger_config - GET /edit/6 Status: 200 Tempo: 0.0285s
+2026-06-18 12:04:03,477 - INFO - logger_config - GET /edit/6 Status: 200 Tempo: 0.0015s
+2026-06-18 12:04:37,387 - INFO - logger_config - GET /edit/6 Status: 200 Tempo: 0.0085s
+2026-06-18 12:06:46,203 - INFO - logger_config - GET /edit/6 Status: 200 Tempo: 0.0020s
+2026-06-18 12:07:34,049 - INFO - logger_config - GET /edit/5 Status: 200 Tempo: 0.0021s
+2026-06-18 12:07:49,124 - INFO - logger_config - GET /edit/5 Status: 200 Tempo: 0.0244s
+2026-06-18 12:07:58,891 - INFO - logger_config - GET /edit/6 Status: 200 Tempo: 0.0010s
+2026-06-18 12:08:08,670 - INFO - logger_config - GET / Status: 200 Tempo: 0.0010s
+2026-06-18 12:08:08,701 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0020s
+2026-06-18 12:08:09,886 - INFO - logger_config - GET /edit/6 Status: 200 Tempo: 0.0020s
+2026-06-18 12:08:31,308 - INFO - logger_config - GET /edit/6 Status: 200 Tempo: 0.0225s
+2026-06-18 12:10:45,638 - INFO - logger_config - GET /edit/6 Status: 200 Tempo: 0.0065s
+2026-06-18 12:10:48,130 - INFO - logger_config - PUT /tarefas/6 Status: 200 Tempo: 0.0080s
+2026-06-18 12:11:08,241 - INFO - logger_config - PUT /tarefas/6 Status: 200 Tempo: 0.0084s
+2026-06-18 12:11:13,175 - INFO - logger_config - GET /edit/6 Status: 200 Tempo: 0.0220s
+2026-06-18 12:11:15,479 - INFO - logger_config - PUT /tarefas/6 Status: 200 Tempo: 0.0105s
+2026-06-18 12:11:15,488 - INFO - logger_config - GET / Status: 200 Tempo: 0.0000s
+2026-06-18 12:11:15,517 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0025s
+2026-06-18 12:11:18,597 - INFO - logger_config - GET /edit/6 Status: 200 Tempo: 0.0025s
+2026-06-18 12:11:20,464 - INFO - logger_config - PUT /tarefas/6 Status: 200 Tempo: 0.0075s
+2026-06-18 12:11:20,473 - INFO - logger_config - GET / Status: 200 Tempo: 0.0010s
+2026-06-18 12:11:20,497 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0035s
+2026-06-18 12:35:58,344 - INFO - logger_config - GET / Status: 200 Tempo: 0.0054s
+2026-06-18 12:35:58,426 - INFO - logger_config - GET /static/style.css Status: 200 Tempo: 0.0662s
+2026-06-18 12:35:58,451 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0020s
+2026-06-18 12:46:54,305 - INFO - logger_config - GET / Status: 200 Tempo: 0.0247s
+2026-06-18 12:46:54,323 - INFO - logger_config - GET /static/style.css Status: 200 Tempo: 0.0010s
+2026-06-18 12:46:54,375 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0020s
+2026-06-18 12:47:04,351 - INFO - logger_config - PUT /tarefas/7 Status: 200 Tempo: 0.0072s
+2026-06-18 12:47:04,358 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0030s
+2026-06-18 12:47:19,985 - INFO - logger_config - GET / Status: 200 Tempo: 0.0229s
+2026-06-18 12:47:20,003 - INFO - logger_config - GET /static/style.css Status: 304 Tempo: 0.0010s
+2026-06-18 12:47:20,009 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0020s
+2026-06-18 12:47:23,542 - INFO - logger_config - PUT /tarefas/6 Status: 200 Tempo: 0.0124s
+2026-06-18 12:47:23,548 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0035s
+2026-06-18 12:47:26,710 - INFO - logger_config - PUT /tarefas/6 Status: 200 Tempo: 0.0116s
+2026-06-18 12:47:26,716 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0040s
+2026-06-18 12:47:29,511 - INFO - logger_config - GET / Status: 200 Tempo: 0.0010s
+2026-06-18 12:47:29,530 - INFO - logger_config - GET /static/style.css Status: 304 Tempo: 0.0020s
+2026-06-18 12:47:29,538 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0010s
+2026-06-18 12:47:45,402 - INFO - logger_config - A adicionar tarefa: Saltar (PrioridadeEnum.media)
+2026-06-18 12:47:45,410 - INFO - logger_config - Tarefa criada com sucesso
+2026-06-18 12:47:45,411 - INFO - logger_config - POST /tarefas Status: 201 Tempo: 0.0116s
+2026-06-18 12:47:45,416 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0030s
+2026-06-18 12:47:48,549 - INFO - logger_config - A remover tarefa 9
+2026-06-18 12:47:48,559 - INFO - logger_config - Tarefa 9 removida com sucesso
+2026-06-18 12:47:48,559 - INFO - logger_config - DELETE /tarefas/9 Status: 204 Tempo: 0.0114s
+2026-06-18 12:47:48,565 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0030s
+2026-06-19 10:34:10,307 - INFO - logger_config - GET / Status: 200 Tempo: 0.0196s
+2026-06-19 10:34:10,437 - INFO - logger_config - GET /static/scripts/app.js Status: 200 Tempo: 0.0901s
+2026-06-19 10:34:10,468 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0095s
+2026-06-19 10:34:39,157 - INFO - logger_config - GET / Status: 200 Tempo: 0.0131s
+2026-06-19 10:34:39,178 - INFO - logger_config - GET /static/scripts/app.js Status: 304 Tempo: 0.0021s
+2026-06-19 10:34:39,179 - INFO - logger_config - GET /static/css/style.css Status: 200 Tempo: 0.0041s
+2026-06-19 10:34:39,227 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0025s
+2026-06-19 10:34:57,785 - INFO - logger_config - A adicionar tarefa: corrigir (PrioridadeEnum.baixa)
+2026-06-19 10:34:57,790 - INFO - logger_config - Tarefa criada com sucesso
+2026-06-19 10:34:57,791 - INFO - logger_config - POST /tarefas Status: 201 Tempo: 0.0105s
+2026-06-19 10:34:57,795 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0020s
+2026-06-19 11:15:56,725 - INFO - logger_config - GET / Status: 200 Tempo: 0.0115s
+2026-06-19 11:15:56,760 - INFO - logger_config - GET /static/scripts/app.js Status: 200 Tempo: 0.0030s
+2026-06-19 11:15:56,852 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0095s
+2026-06-19 11:16:00,072 - INFO - logger_config - A marcar tarefa 7 como concluída
+2026-06-19 11:16:00,079 - INFO - logger_config - PUT /tarefas/7 Status: 200 Tempo: 0.0149s
+2026-06-19 11:16:00,089 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0050s
+2026-06-19 11:17:10,392 - INFO - logger_config - GET / Status: 200 Tempo: 0.0215s
+2026-06-19 11:17:10,417 - INFO - logger_config - GET /tarefas Status: 200 Tempo: 0.0025s

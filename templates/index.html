@@ -2,50 +2,73 @@
 <html>
 <head>
     <title>Gestor de Tarefas</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
 </head>
 <body>
-    <h1>Gestor de Tarefas</h1>
 
-    <input id="titulo" placeholder="Título">
-    <select id="prioridade">
-        <option value="Alta">Alta</option>
-        <option value="Média">Média</option>
-        <option value="Baixa">Baixa</option>
-    </select>
-    <button onclick="adicionar()">Adicionar</button>
+    <div class="container">
 
-    <h2>Lista de Tarefas</h2>
-    <ul id="lista"></ul>
+        <h1>Gestor de Tarefas</h1>
 
-    <script>
-        async function listar() {
-            const response = await fetch("/tarefas");
-            const tarefas = await response.json();
+        <div class="form">
 
-            const lista = document.getElementById("lista");
-            lista.innerHTML = "";
+            <input id="titulo" placeholder="Título">
+            <select id="prioridade">
+                <option value="Alta">Alta</option>
+                <option value="Média">Média</option>
+                <option value="Baixa">Baixa</option>
+            </select>
 
-            tarefas.forEach(t => {
-                const li = document.createElement("li");
-                li.textContent = `${t.formatado}`;
-                lista.appendChild(li);
-            });
-        }
+            <button onclick="adicionar()">Adicionar</button>
 
-        async function adicionar() {
-            const titulo = document.getElementById("titulo").value;
-            const prioridade = document.getElementById("prioridade").value;
+            <input id="pesquisa" placeholder="Pesquisar">
+            <select id="filtro">
+                <option>Todas</option>
+                <option>Alta</option>
+                <option>Média</option>
+                <option>Baixa</option>
+            </select>
 
-            await fetch("/tarefas", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ titulo, prioridade })
-            });
+        </div>
 
-            listar();
-        }
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Prioridade</th>
+                    <th>Data</th>
+                    <th>Estado</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
 
-        listar();
-    </script>
+            <tbody id="tabela"></tbody>
+        </table>
+
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+
+            <h3>Editar Tarefa</h3>
+
+            <input id="modal-titulo" placeholder="Título">
+
+            <select id="modal-prioridade">
+                <option value="Alta">Alta</option>
+                <option value="Média">Média</option>
+                <option value="Baixa">Baixa</option>
+            </select>
+
+            <br><br>
+
+            <button onclick="guardarEdicao()">Guardar</button>
+            <button onclick="fecharModal()">Cancelar</button>
+
+        </div>
+    </div>
+
+    <script src="/static/scripts/app.js"></script>
 </body>
 </html>

@@ -29,11 +29,11 @@ def tarefa_para_dict(tarefa):
         "titulo": tarefa.titulo,
         "prioridade": tarefa.prioridade,
         "data_criacao": tarefa.data_criacao,
-        "estado": tarefa.estado,
-        "formatado": f"{tarefa.id} - {tarefa.titulo} | {tarefa.prioridade} | {tarefa.data_criacao} | {estado_icone}"
+        "estado": estado_icone
     }
 
-app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/static/css", StaticFiles(directory="static/css"), name="static")
+app.mount("/static/scripts", StaticFiles(directory="static/scripts"), name="static")
 templates = Jinja2Templates(directory="templates")
 
 def get_gestor():
@@ -74,12 +74,19 @@ async def http_exception_handler(request: Request, exc: HTTPException):
 
 @app.get("/", response_class=HTMLResponse)
 def home(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+    return templates.TemplateResponse(name="index.html", request=request)
 
 @app.get("/tarefas")
 def listar(gestor: GestorTarefas = Depends(get_gestor)):
     tarefas = gestor.listar_tarefas()
     return [tarefa_para_dict(t) for t in tarefas]
+
+@app.get("/edit/{id}")
+def obter(request: Request, id: int, gestor: GestorTarefas = Depends(get_gestor)):
+    tarefa = gestor.obter_tarefa(id)
+    if not tarefa:
+        raise HTTPException(status_code=404, detail="Tarefa não encontrada")
+    return templates.TemplateResponse(name="edit.html", request=request, context={"tarefa": tarefa_para_dict(tarefa)})
 
 @app.post("/tarefas", status_code=201)
 def criar(
